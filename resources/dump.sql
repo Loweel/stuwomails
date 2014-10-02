@@ -36,3 +36,7 @@ CREATE TABLE `request` (
 )
 COLLATE='utf8_unicode_ci'
 ENGINE=InnoDB;
+
+
+INSERT INTO `mailing_list` (`id`, `name`, `address`, `subscribe_address`) VALUES
+    (1, 'mps31', 'mps31@stuwomails.de', 'mps31-subscribe-%s@stuwomails.de');
