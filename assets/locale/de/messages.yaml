@@ -1,0 +1,99 @@
+browser_title: Mailingliste Gustav-Berger-Haus
+header_domain: StuWoMails.de
+header_name: Mailingliste Gustav-Berger-Haus
+header_languages: >
+    <a href="{{ .root }}language/en/">English</a>
+html_lang_attribute: de
+
+
+page_check_title: E-Mail-Adresse überprüfen
+page_check_form_password: "Passwort:"
+page_check_form_email: "E-Mail-Adresse:"
+page_check_form_submit: Absenden
+
+page_check_results_title: Ergebnisse
+page_check_results_for:
+    one: >
+        1 Ergebnis für <em>{{ .email }}</em>:
+    other: >
+        {{ .Count }} Ergebnisse für <em>{{ .email }}</em>:
+page_check_results_none: >
+    Keine Ergebnisse für <em>{{ .email }}</em>.
+
+page_check_results_table_first_name: Vorname
+page_check_results_table_last_name: Nachname
+page_check_results_table_room: Zimmernummer
+page_check_results_table_email: E-Mail-Adresse
+page_check_results_table_mailing_list: Mailingliste
+page_check_results_table_ip_address: IP-Adresse
+page_check_results_table_date: Datum
+
+page_check_results_table_date_format: 02.01.2006 15:04:05
+
+page_check_wrong_password_title: Falsches Passwort
+page_check_wrong_password_message: Falsches Passwort.
+
+
+page_index_what_title: Was?
+page_index_what_p1: >
+    Willkommen auf der Mailingliste des <a href="http://www.studentenwerk.uni-heidelberg.de/zv_portal/zv?px=CRB7373743D3432266B65793D33324130423138342D464641332D424534452D454537322D303045453936303337463345267A765F616374696F6E3D43485F50414745267A765F76616C75653D5357445F57485F576F686E6865696D44657461696C616E73696368745F484E26424F49443D44455A56303531323037313134303533303235267365743D3432265A565F4352433D323735343538333634CRE">Studentenwohnheim Gustav-Berger-Haus</a> in Heilbronn. Diese Seite soll als Anleitung dienen, wie sich die Bewohner des Studentenwohnheims auf der Mailingliste eintragen können.
+
+page_index_why_title: Warum?
+page_index_why_p1: >
+    Die Mailingliste wurde eingerichtet, um die <strong>Kommunikation zwischen den Bewohnern</strong> im Wohnheim zu verbessern. Sie soll z.&nbsp;B. den Wohnheimsprechern dabei helfen <strong>gemeinsame Abende in den Gemeinschaftsräumen</strong> zu organisieren (Wer hat Interesse? Wer hat wann Zeit?) und euch auf dem laufenden zu halten.
+page_index_why_p2: >
+    Aus diesem Grund ist jeder Bewohner des Gustav-Berger-Hauses herzlich dazu eingeladen, sich auf der Mailingliste einzutragen! :)
+
+page_index_how_title: Wie?
+page_index_how_p1: >
+    Um euch auf der Mailingliste einzutragen müsst ihr hier euren Namen, eure Zimmernummer und eure E-Mail-Adresse eingeben:
+page_index_how_form_first_name: Vorname
+page_index_how_form_last_name: Nachname
+page_index_how_form_room: Zimmernummer
+page_index_how_form_email: E-Mail-Adresse
+page_index_how_form_submit: Absenden
+page_index_how_p2: >
+    Wir möchten damit sicherstellen, dass sich nur Bewohner des Studentenwohnheims auf der Liste eintragen. Nach dem Absenden erhaltet ihr vom System sofort eine Bestätigungs-E-Mail zurück, in der ihr aufgefordert werdet <strong>eine leere E-Mail an eine bestimmte E-Mail-Adresse zu senden</strong>, um die Echtheit eurer E-Mail-Adresse zu bestätigen.
+page_index_how_p3: >
+    Nachdem dies erledigt ist, muss ein Moderator die E-Mail-Adresse freischalten. Sobald dies erfolgt ist, erhaltet ihr eine weitere Bestätigungs-E-Mail und seid ab diesem Zeitpunkt auf der Mailingliste eingetragen.
+page_index_how_p4: >
+    Eure hier eingegebenen Daten werden vertraulich behandelt. Sie sind – abgesehen von den Moderatoren der Mailingliste – für niemanden einsehbar.
+page_index_how_p5: >
+    Die E-Mail-Adresse der Mailingliste ist <code>mps31@stuwomails.de</code>. Wir erwarten, dass das Mailvolumen im einstelligen Bereich pro Monat bleibt. Wer sich trotzdem wieder von der Mailingliste abmelden möchte, kann eine leere E-Mail an <a href="mailto:mps31-unsubscribe@stuwomails.de"><code>mps31-unsubscribe@stuwomails.de</code></a> senden. Das System sendet daraufhin sofort eine Bestätigungs-E-Mail zurück, in der die weiteren Schritte zur endgültigen Abmeldung stehen.
+
+page_index_who_title: Wer?
+page_index_who_p1: >
+    <a href="mailto:maria@stuwomails.de">Maria</a> und <a href="mailto:rami@stuwomails.de">Rami</a> (Wohnheimsprecher) sowie <a href="mailto:serhan@stuwomails.de">Serhan</a> (Etagensprecher UG) sind derzeit die Moderatoren der Mailingliste.
+page_index_who_p2: >
+    Die Mailingliste wird von Serhan (UG/2-2) betrieben. Bei Fragen oder technischen Problemen kann man sich per <a href="mailto:serhan@stuwomails.de">E-Mail</a> an ihn wenden oder auch einfach vorbeikommen. :)
+page_index_who_p3: >
+    Verwendete Software: <a href="http://untroubled.org/ezmlm/">ezmlm-idx</a>, <a href="https://golang.org/">Go</a>, <a href="https://www.sublimetext.com/">Sublime Text</a>. Gehostet bei <a href="https://uberspace.de/">Uberspace</a>. <a href="https://github.com/srhnsn/stuwomails">Quellcode verfügbar</a>.
+
+page_index_imprint_title: Impressum
+page_index_imprint_p1: >
+    StuWoMails.de wird betrieben von:
+page_index_imprint_address: >
+    Serhan Şen<br>
+    Max-Planck-Straße 31<br>
+    74081 Heilbronn
+page_index_imprint_p2: >
+    E-Mail: <a href="mailto:serhan@stuwomails.de">serhan@stuwomails.de</a>
+page_index_imprint_p3: >
+    Dies ist kein offizielles Angebot des <a href="http://www.studentenwerk.uni-heidelberg.de/">Studentenwerk Heidelberg</a>.
+
+page_index_invalid_mailing_list_title: Eingabefehler
+page_index_invalid_mailing_list_message: Ungültige Mailingliste.
+
+page_index_empty_fields_title: Eingabefehler
+page_index_empty_fields_message: Bitte fülle alle Felder aus.
+
+page_index_invalid_email_title: Eingabefehler
+page_index_invalid_email_message: Bitte gib eine gültige E-Mail-Adresse ein.
+
+page_index_server_error_title: Serverfehler
+page_index_server_error_message: >
+    Es trat ein interner Serverfehler auf. Sollte das Problem nach einer Weile immer noch auftreten, sollte vielleicht jemand <a href="mailto:serhan@stuwomails.de">Serhan</a> Bescheid geben. :)
+
+page_index_email_success_title: E-Mail versendet
+page_index_email_success_message: >
+    Es wurde eine E-Mail an <strong>{{ .email }}</strong> mit weiteren Anweisungen versendet.

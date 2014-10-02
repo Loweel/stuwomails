@@ -1,0 +1,4 @@
+= content content
+  section
+    h2 {{ .title }}
+    p {{ .message }}

@@ -1,0 +1,26 @@
+app:
+    check_password: password
+    default_language: de
+
+database:
+    dsn: "user:password@/database?collation=utf8_unicode_ci&loc=Local&parseTime=true"
+
+languages:
+    - de
+    - en
+
+mail:
+    server: 127.0.0.1
+    port: 587
+    username: username
+    password: password
+    from: example@example.com
+
+server:
+    csp:
+        - default-src 'none'
+        - style-src 'self'
+    debug: false
+    port: 1234
+    root: /
+    secret: RArh3mcP0cGRcvkw3NMnB4VCybhBa0ItVEk7n03CNu6g9opdEbvCx7z5JBHO

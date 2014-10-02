@@ -1,0 +1,45 @@
+= content content
+  section
+    h2 {{ T "page_index_what_title" }}
+    p {{ T "page_index_what_p1" }}
+  
+  
+  section
+    h2 {{ T "page_index_why_title" }}
+    p {{ T "page_index_why_p1" }}
+    p {{ T "page_index_why_p2" }}
+  
+  
+  section
+    h2 {{ T "page_index_how_title" }}
+    p {{ T "page_index_how_p1" }}
+    
+    form action="." method="post"
+      {{ .csrf }}
+      p
+        input name="mailing_list_id" type="hidden" value="1"
+        input name="first_name" placeholder={{ T "page_index_how_form_first_name" }}
+        input name="last_name" placeholder={{ T "page_index_how_form_last_name" }}
+        input name="room" placeholder={{ T "page_index_how_form_room" }} size="12"
+        input name="email" placeholder={{ T "page_index_how_form_email" }} size="25"
+        button {{ T "page_index_how_form_submit" }}
+    
+    p {{ T "page_index_how_p2" }}
+    p {{ T "page_index_how_p3" }}
+    p {{ T "page_index_how_p4" }}
+    p {{ T "page_index_how_p5" }}
+  
+  
+  section
+    h2 {{ T "page_index_who_title" }}
+    p {{ T "page_index_who_p1" }}
+    p {{ T "page_index_who_p2" }}
+    p {{ T "page_index_who_p3" }}
+  
+  
+  footer
+    h2 {{ T "page_index_imprint_title" }}
+    p {{ T "page_index_imprint_p1" }}
+    p {{ T "page_index_imprint_address" }}
+    p {{ T "page_index_imprint_p2" }}
+    p {{ T "page_index_imprint_p3" }}

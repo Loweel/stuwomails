@@ -1,0 +1,7 @@
+*.sublime-*
+app/assets.go
+assets/config.yaml
+resources/config.development.yaml
+resources/config.production.yaml
+resources/ezmlm.txt
+stuwomails

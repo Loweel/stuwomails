@@ -1,0 +1,98 @@
+browser_title: Mailing list Gustav-Berger-Haus
+header_domain: StuWoMails.de
+header_name: Mailing list Gustav-Berger-Haus
+header_languages: >
+    <a href="{{ .root }}language/de/">Deutsch</a>
+html_lang_attribute: en
+
+
+page_check_title: E-Mail-Adresse überprüfen
+page_check_form_password: "Passwort:"
+page_check_form_email: "E-Mail-Adresse:"
+page_check_form_submit: Absenden
+
+page_check_results_title: Ergebnisse
+page_check_results_for:
+    one: >
+        1 Ergebnis für <em>{{ .email }}</em>:
+    other: >
+        {{ .Count }} Ergebnisse für <em>{{ .email }}</em>:
+page_check_results_none: >
+    Keine Ergebnisse für <em>{{ .email }}</em>.
+
+page_check_results_table_first_name: Vorname
+page_check_results_table_last_name: Nachname
+page_check_results_table_room: Zimmernummer
+page_check_results_table_email: E-Mail-Adresse
+page_check_results_table_mailing_list: Mailingliste
+page_check_results_table_ip_address: IP-Adresse
+page_check_results_table_date: Datum
+
+page_check_results_table_date_format: 02.01.2006 15:04:05
+
+page_check_wrong_password_title: Falsches Passwort
+page_check_wrong_password_message: Falsches Passwort.
+
+
+page_index_what_title: What?
+page_index_what_p1: >
+    Welcome to the <a href="http://www.studentenwerk.uni-heidelberg.de/zv_portal/zv?px=CRB7373743D3432266B65793D33324130423138342D464641332D424534452D454537322D303045453936303337463345267A765F616374696F6E3D43485F50414745267A765F76616C75653D5357445F57485F576F686E6865696D44657461696C616E73696368745F484E26424F49443D44455A56303531323037313134303533303235267365743D3432265A565F4352433D323735343538333634CRE">Gustav-Berger-Haus residence hall</a> mailing list in Heilbronn. This page describes how residents can subscribe to the mailing list.
+
+page_index_why_title: Why?
+page_index_why_p1: >
+    We created the mailing list so the residence hall representatives can inform the residents about <strong>planned common activities</strong> in the residence.
+page_index_why_p2: >
+    We would like to invite all residents of the Gustav-Berger-Haus to subscribe to the mailing list! :)
+
+page_index_how_title: How?
+page_index_how_p1: >
+    To subscribe, enter your name, room number and email address:
+page_index_how_form_first_name: First name
+page_index_how_form_last_name: Last name
+page_index_how_form_room: Room number
+page_index_how_form_email: Email address
+page_index_how_form_submit: Submit
+page_index_how_p2: >
+    After you have submitted the form, you will immediately receive a confirmation email which asks you <strong>to send an empty email to a special address</strong>. Unfortunately, this email is in German and this cannot be changed at the moment, but all you need to do is look for a special email address which looks like this:<br><code>mps31-sc.1412014055.jkocbgoihjbpobjlfbnc-example=example.com@stuwomails.de</code><br>In most email clients, you can simply click on that email address and hit “Send”.
+page_index_how_p3: >
+    After you have done this, a mailing list moderator will confirm your subscription request. When this is done, you will get a second confirmation mail. At this point, you are subscribed to the mailing list and will receive updates by the residence hall representatives.
+page_index_how_p4: >
+    All data you enter here is kept confidential. Only the mailing list moderators are able to see it.
+page_index_how_p5: >
+    If you want to unsubscribe again, just send an empty email to <a href="mailto:mps31-unsubscribe@stuwomails.de"><code>mps31-unsubscribe@stuwomails.de</code></a>. The system will send you a confirmation email which a special email address like above. When you send an empty email to this address, you will be unsubscribed.
+
+page_index_who_title: Who?
+page_index_who_p1: >
+    <a href="mailto:maria@stuwomails.de">Maria</a> und <a href="mailto:rami@stuwomails.de">Rami</a> (residence hall representatives) and <a href="mailto:serhan@stuwomails.de">Serhan</a> (basement floor representative) are currently the moderators.
+page_index_who_p2: >
+    The mailing list is operated by Serhan (UG/2-2). If you have any questions or trouble subscribing to the mailing list, just send him an <a href="mailto:serhan@stuwomails.de">email</a> or drop by at his room. :)
+page_index_who_p3: >
+    Software used: <a href="http://untroubled.org/ezmlm/">ezmlm-idx</a>, <a href="https://golang.org/">Go</a>, <a href="https://www.sublimetext.com/">Sublime Text</a>. Hosted at <a href="https://uberspace.de/">Uberspace</a>. <a href="https://github.com/srhnsn/stuwomails">Source code available</a>.
+
+page_index_imprint_title: Imprint
+page_index_imprint_p1: " "
+page_index_imprint_address: >
+    Serhan Şen<br>
+    Max-Planck-Straße 31<br>
+    74081 Heilbronn
+page_index_imprint_p2: >
+    E-Mail: <a href="mailto:serhan@stuwomails.de">serhan@stuwomails.de</a>
+page_index_imprint_p3: >
+    This is not an official service by the <a href="http://www.studentenwerk.uni-heidelberg.de/">Studentenwerk Heidelberg</a>.
+
+page_index_invalid_mailing_list_title: Input error
+page_index_invalid_mailing_list_message: Invalid mailing list.
+
+page_index_empty_fields_title: Input error
+page_index_empty_fields_message: Please fill in all fields.
+
+page_index_invalid_email_title: Input error
+page_index_invalid_email_message: Please fill in a valid email address.
+
+page_index_server_error_title: Server error
+page_index_server_error_message: >
+    An internal server error occured. If the problems is still there after a while, maybe someone should let <a href="mailto:serhan@stuwomails.de">Serhan</a> know. :)
+
+page_index_email_success_title: E-Mail sent
+page_index_email_success_message: >
+    An email with further instructions was sent to <strong>{{ .email }}</strong>.
