@@ -28,6 +28,7 @@
     p {{ T "page_index_how_p3" }}
     p {{ T "page_index_how_p4" }}
     p {{ T "page_index_how_p5" }}
+    p {{ T "page_index_how_p6" }}
   
   
   section

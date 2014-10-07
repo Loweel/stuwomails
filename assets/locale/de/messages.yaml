@@ -53,19 +53,21 @@ page_index_how_form_room: Zimmernummer
 page_index_how_form_email: E-Mail-Adresse
 page_index_how_form_submit: Absenden
 page_index_how_p2: >
-    Wir möchten damit sicherstellen, dass sich nur Bewohner des Studentenwohnheims auf der Liste eintragen. Nach dem Absenden erhaltet ihr vom System sofort eine Bestätigungs-E-Mail zurück, in der ihr aufgefordert werdet <strong>eine leere E-Mail an eine bestimmte E-Mail-Adresse zu senden</strong>, um die Echtheit eurer E-Mail-Adresse zu bestätigen.
+    Wir möchten damit sicherstellen, dass sich nur Bewohner des Studentenwohnheims auf der Liste eintragen. Nach dem Absenden erhaltet ihr vom System sofort eine Bestätigungs-E-Mail zurück, in der ihr aufgefordert werdet <strong>eine leere E-Mail an eine bestimmte E-Mail-Adresse zu senden</strong>, um die Echtheit eurer E-Mail-Adresse zu bestätigen. In den meisten E-Mail-Programmen kann man auch einfach auf den <strong>Antworten-Knopf klicken</strong>.
 page_index_how_p3: >
-    Nachdem dies erledigt ist, muss ein Moderator die E-Mail-Adresse freischalten. Sobald dies erfolgt ist, erhaltet ihr eine weitere Bestätigungs-E-Mail und seid ab diesem Zeitpunkt auf der Mailingliste eingetragen.
+    Überprüft aucht den <strong>Spam-Ordner</strong>, falls nach einigen Sekunden noch keine E-Mail angekommen ist.
 page_index_how_p4: >
-    Eure hier eingegebenen Daten werden vertraulich behandelt. Sie sind – abgesehen von den Moderatoren der Mailingliste – für niemanden einsehbar.
+    Nachdem dies erledigt ist, muss ein Moderator die E-Mail-Adresse freischalten. Sobald dies erfolgt ist, erhaltet ihr eine weitere Bestätigungs-E-Mail und seid ab diesem Zeitpunkt auf der Mailingliste eingetragen.
 page_index_how_p5: >
+    Eure hier eingegebenen Daten werden vertraulich behandelt. Sie sind – abgesehen von den Moderatoren der Mailingliste – für niemanden einsehbar.
+page_index_how_p6: >
     Die E-Mail-Adresse der Mailingliste ist <code>mps31@stuwomails.de</code>. Wir erwarten, dass das Mailvolumen im einstelligen Bereich pro Monat bleibt. Wer sich trotzdem wieder von der Mailingliste abmelden möchte, kann eine leere E-Mail an <a href="mailto:mps31-unsubscribe@stuwomails.de"><code>mps31-unsubscribe@stuwomails.de</code></a> senden. Das System sendet daraufhin sofort eine Bestätigungs-E-Mail zurück, in der die weiteren Schritte zur endgültigen Abmeldung stehen.
 
 page_index_who_title: Wer?
 page_index_who_p1: >
-    <a href="mailto:maria@stuwomails.de">Maria</a> und <a href="mailto:rami@stuwomails.de">Rami</a> (Wohnheimsprecher) sowie <a href="mailto:serhan@stuwomails.de">Serhan</a> (Etagensprecher UG) sind derzeit die Moderatoren der Mailingliste.
+    <a href="mailto:maria@stuwomails.de">Maria</a> und <a href="mailto:rami@stuwomails.de">Rami</a> (Wohnheimsprecher) sowie <a href="mailto:serhan@stuwomails.de">Serhan</a> (UG/02-2) sind derzeit die Moderatoren der Mailingliste.
 page_index_who_p2: >
-    Die Mailingliste wird von Serhan (UG/2-2) betrieben. Bei Fragen oder technischen Problemen kann man sich per <a href="mailto:serhan@stuwomails.de">E-Mail</a> an ihn wenden oder auch einfach vorbeikommen. :)
+    Die Mailingliste wird von Serhan betrieben. Bei Fragen oder technischen Problemen kann man sich per <a href="mailto:serhan@stuwomails.de">E-Mail</a> an ihn wenden oder auch einfach vorbeikommen. :)
 page_index_who_p3: >
     Verwendete Software: <a href="http://untroubled.org/ezmlm/">ezmlm-idx</a>, <a href="https://golang.org/">Go</a>, <a href="https://www.sublimetext.com/">Sublime Text</a>. Gehostet bei <a href="https://uberspace.de/">Uberspace</a>. <a href="https://github.com/srhnsn/stuwomails">Quellcode verfügbar</a>.
 
