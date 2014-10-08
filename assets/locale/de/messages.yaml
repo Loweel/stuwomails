@@ -83,14 +83,18 @@ page_index_imprint_p2: >
 page_index_imprint_p3: >
     Dies ist kein offizielles Angebot des <a href="http://www.studierendenwerk-heidelberg.de/">Studierendenwerk Heidelberg</a>.
 
-page_index_invalid_mailing_list_title: Eingabefehler
-page_index_invalid_mailing_list_message: Ungültige Mailingliste.
+
+page_index_email_blacklisted_title: Eingabefehler
+page_index_email_blacklisted_message: Diese E-Mail-Adresse kann auf der Mailingliste nicht verwendet werden.
 
 page_index_empty_fields_title: Eingabefehler
 page_index_empty_fields_message: Bitte fülle alle Felder aus.
 
 page_index_invalid_email_title: Eingabefehler
 page_index_invalid_email_message: Bitte gib eine gültige E-Mail-Adresse ein.
+
+page_index_invalid_mailing_list_title: Eingabefehler
+page_index_invalid_mailing_list_message: Ungültige Mailingliste.
 
 page_index_server_error_title: Serverfehler
 page_index_server_error_message: >

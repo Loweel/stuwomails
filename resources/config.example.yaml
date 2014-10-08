@@ -24,3 +24,6 @@ server:
     port: 1234
     root: /
     secret: RArh3mcP0cGRcvkw3NMnB4VCybhBa0ItVEk7n03CNu6g9opdEbvCx7z5JBHO
+
+email_blacklist:
+    - "(?i)@example.(com|net|org)$"

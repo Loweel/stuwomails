@@ -82,14 +82,18 @@ page_index_imprint_p2: >
 page_index_imprint_p3: >
     This is not an official service by the <a href="http://www.studierendenwerk-heidelberg.de/">Studierendenwerk Heidelberg</a>.
 
-page_index_invalid_mailing_list_title: Input error
-page_index_invalid_mailing_list_message: Invalid mailing list.
+
+page_index_email_blacklisted_title: Input error
+page_index_email_blacklisted_message: This email address cannot be used on this mailing list.
 
 page_index_empty_fields_title: Input error
 page_index_empty_fields_message: Please fill in all fields.
 
 page_index_invalid_email_title: Input error
 page_index_invalid_email_message: Please fill in a valid email address.
+
+page_index_invalid_mailing_list_title: Input error
+page_index_invalid_mailing_list_message: Invalid mailing list.
 
 page_index_server_error_title: Server error
 page_index_server_error_message: >

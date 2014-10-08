@@ -1,6 +1,8 @@
 package config
 
 import (
+	"regexp"
+
 	"github.com/srhnsn/go-utils/database"
 	"github.com/srhnsn/go-utils/email"
 )
@@ -12,6 +14,9 @@ type ConfigType struct {
 	}
 
 	Database database.DatabaseConfig
+
+	EmailBlacklist         []string `mapstructure:"email_blacklist"`
+	EmailBlacklistPatterns []*regexp.Regexp
 
 	Languages []string
 

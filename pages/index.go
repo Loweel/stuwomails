@@ -15,6 +15,7 @@ import (
 	"github.com/srhnsn/go-utils/misc"
 	"github.com/srhnsn/go-utils/webapps"
 
+	"github.com/srhnsn/stuwomails/config"
 	"github.com/srhnsn/stuwomails/model"
 )
 
@@ -43,7 +44,13 @@ func IndexPageSubmitForm(w http.ResponseWriter, r *http.Request, _ httprouter.Pa
 		return
 	}
 
-	err := sendEmail(requestData.email, requestData.mailingListId)
+	var err error
+
+	if config.Config.Server.Debug {
+		log.Info.Println("Not sending subscription request email in debug mode")
+	} else {
+		err = sendEmail(requestData.email, requestData.mailingListId)
+	}
 
 	if err != nil {
 		log.Error.Printf("Subscription email failed: %s", err)
@@ -87,6 +94,16 @@ func getIndexPageSubmitData(r *http.Request) indexPageSubmitData {
 	return data
 }
 
+func isEmailBlacklisted(email string) bool {
+	for _, pattern := range config.Config.EmailBlacklistPatterns {
+		if pattern.MatchString(email) {
+			return true
+		}
+	}
+
+	return false
+}
+
 func validateIndexPageSubmitData(r *http.Request, w http.ResponseWriter, requestData indexPageSubmitData) (ok bool) {
 	data := webapps.GetTemplateData(r)
 	T := webapps.GetFutureT(r)
@@ -109,6 +126,15 @@ func validateIndexPageSubmitData(r *http.Request, w http.ResponseWriter, request
 	if !emailPattern.MatchString(requestData.email) {
 		data["title"] = T("page_index_invalid_email_title")
 		data["message"] = T("page_index_invalid_email_message")
+		webapps.FlashMessage(r, w)
+		return
+	}
+
+	if isEmailBlacklisted(requestData.email) {
+		ipAddress := misc.GetProxiedIpAddress(r)
+		log.Warning.Printf("%s tried to subscribe with blacklisted email address \"%s\"", ipAddress, requestData.email)
+		data["title"] = T("page_index_email_blacklisted_title")
+		data["message"] = T("page_index_email_blacklisted_message")
 		webapps.FlashMessage(r, w)
 		return
 	}

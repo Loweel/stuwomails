@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"regexp"
 
 	"github.com/srhnsn/go-utils/database"
 	"github.com/srhnsn/go-utils/email"
@@ -20,8 +21,9 @@ const configFilename = "config.yaml"
 func main() {
 	var config appConfig.ConfigType
 	misc.LoadConfig(configFilename, Asset, &config)
-	appConfig.Config = config
+	initEmailRegexp(&config)
 
+	appConfig.Config = config
 	initMiddleware(config)
 
 	addr := fmt.Sprintf(":%d", config.Server.Port)
@@ -32,6 +34,18 @@ func main() {
 
 	if err != nil {
 		log.Error.Fatalf("Cannot listen on port %d: %s", config.Server.Port, err)
+	}
+}
+
+func initEmailRegexp(config *appConfig.ConfigType) {
+	config.EmailBlacklistPatterns = make([]*regexp.Regexp, len(config.EmailBlacklist))
+
+	for i, email := range config.EmailBlacklist {
+		if email == "" {
+			log.Error.Fatalf("Got empty blacklist email address")
+		}
+
+		config.EmailBlacklistPatterns[i] = regexp.MustCompile(email)
 	}
 }
 
