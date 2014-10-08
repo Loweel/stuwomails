@@ -97,4 +97,4 @@ page_index_server_error_message: >
 
 page_index_email_success_title: E-Mail sent
 page_index_email_success_message: >
-    An email with further instructions was sent to <strong>{{ .email }}</strong>.
+    An email with further instructions was sent to <strong>{{ .email }}</strong>. Please also check your <strong>spam folder</strong> if the email has not arrived after a couple of seconds.
