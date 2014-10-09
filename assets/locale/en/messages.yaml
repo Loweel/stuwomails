@@ -69,15 +69,15 @@ page_index_how_form_room: Room number
 page_index_how_form_email: Email address
 page_index_how_form_submit: Submit
 page_index_how_p2: >
-    After you have submitted the form, you will immediately receive a confirmation email which asks you <strong>to send an empty email to a special address</strong>. Unfortunately, this email is in German and this cannot be changed at the moment, but all you need to do is look for a special email address which looks like this:<br><code>mps31-sc.1412014055.jkocbgoihjbpobjlfbnc-example=example.com@stuwomails.de</code><br>In most email clients, you can also simply use the <strong>reply function</strong>.
+    After you have submitted the form, you will immediately receive a confirmation email. Unfortunately, this email is in German and this cannot be changed at the moment, but all you need to do is to reply to this email by using the <strong>reply function</strong> of your email program (subject and email content will be ignored) to confirm your email address. The reply will be sent to a special system email address.
 page_index_how_p3: >
-    Do not forget to check your <strong>spam folder</strong> if you do not see the email after a couple of seconds.
+    Do not forget to check your <strong>spam folder</strong> if the email has not arrived after a couple of seconds.
 page_index_how_p4: >
-    After you have done this, a mailing list moderator will confirm your subscription request. When this is done, you will get a second confirmation mail. At this point, you are subscribed to the mailing list and will receive updates by the residence hall representatives.
+    After you have done this, a mailing list moderator will eventually confirm your subscription request. When this is done, you will get a second confirmation mail. At this point, you are subscribed to the mailing list and will receive updates by the residence hall representatives.
 page_index_how_p5: >
     All data you enter here is kept confidential. Only the mailing list moderators are able to see it.
 page_index_how_p6: >
-    If you want to unsubscribe again, just send an empty email to <a href="mailto:mps31-unsubscribe@stuwomails.de"><code>mps31-unsubscribe@stuwomails.de</code></a>. The system will send you a confirmation email which a special email address like above. When you send an empty email to this address, you will be unsubscribed.
+    If you want to unsubscribe again, just send an empty email to <a href="mailto:mps31-unsubscribe@stuwomails.de"><code>mps31-unsubscribe@stuwomails.de</code></a>. The system will immediately send you a confirmation email to which you need to reply like above (use the reply function of your email program, subject and email content will be ignored). After you have done this, you will be unsubscribed.
 
 page_index_who_title: Who?
 page_index_who_p1: >
@@ -117,4 +117,6 @@ page_index_server_error_message: >
 
 page_index_email_success_title: E-Mail sent
 page_index_email_success_message: >
-    An email with further instructions was sent to <strong>{{ .email }}</strong>. Please also check your <strong>spam folder</strong> if the email has not arrived after a couple of seconds.
+    An email was sent to <strong>{{ .email }}</strong>. You need to reply to this email by using the <strong>reply function</strong> of your email program (subject and email content will be ignored) to confirm your email address.</p>
+    
+    <p>Please also check your <strong>spam folder</strong> if the email has not arrived after a couple of seconds.

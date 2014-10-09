@@ -69,7 +69,7 @@ page_index_how_form_room: Zimmernummer
 page_index_how_form_email: E-Mail-Adresse
 page_index_how_form_submit: Absenden
 page_index_how_p2: >
-    Wir möchten damit sicherstellen, dass sich nur Bewohner des Studentenwohnheims auf der Liste eintragen. Nach dem Absenden erhaltet ihr vom System sofort eine Bestätigungs-E-Mail zurück, in der ihr aufgefordert werdet <strong>eine leere E-Mail an eine bestimmte E-Mail-Adresse zu senden</strong>, um die Echtheit eurer E-Mail-Adresse zu bestätigen. In den meisten E-Mail-Programmen kann man auch einfach auf den <strong>Antworten-Knopf klicken</strong>.
+    Wir möchten damit sicherstellen, dass sich nur Bewohner des Studentenwohnheims auf der Liste eintragen. Nach dem Absenden erhaltet ihr vom System sofort eine Bestätigungs-E-Mail zurück. Sendet eine Antwort auf diese E-Mail, indem ihr die <strong>Antworten-Funktion</strong> eures E-Mail-Programms verwendet (Betreff und E-Mail-Inhalt egal), um die Echtheit eurer E-Mail-Adresse zu bestätigen. Die Antwort wird an eine spezielle E-Mail-Adresse des Systems versendet.
 page_index_how_p3: >
     Überprüft aucht den <strong>Spam-Ordner</strong>, falls nach einigen Sekunden noch keine E-Mail angekommen ist.
 page_index_how_p4: >
@@ -77,7 +77,7 @@ page_index_how_p4: >
 page_index_how_p5: >
     Eure hier eingegebenen Daten werden vertraulich behandelt. Sie sind – abgesehen von den Moderatoren der Mailingliste – für niemanden einsehbar.
 page_index_how_p6: >
-    Die E-Mail-Adresse der Mailingliste ist <code>mps31@stuwomails.de</code>. Wir erwarten, dass das Mailvolumen im einstelligen Bereich pro Monat bleibt. Wer sich trotzdem wieder von der Mailingliste abmelden möchte, kann eine leere E-Mail an <a href="mailto:mps31-unsubscribe@stuwomails.de"><code>mps31-unsubscribe@stuwomails.de</code></a> senden. Das System sendet daraufhin sofort eine Bestätigungs-E-Mail zurück, in der die weiteren Schritte zur endgültigen Abmeldung stehen.
+    Die E-Mail-Adresse der Mailingliste ist <code>mps31@stuwomails.de</code>. Wir erwarten, dass das Mailvolumen im einstelligen Bereich pro Monat bleibt. Wer sich trotzdem wieder von der Mailingliste abmelden möchte, kann eine leere E-Mail an <a href="mailto:mps31-unsubscribe@stuwomails.de"><code>mps31-unsubscribe@stuwomails.de</code></a> senden. Das System sendet daraufhin sofort eine Bestätigungs-E-Mail zurück, auf die man nach obigem Prinzip (Antworten-Funktion des E-Mail-Programms verwenden, Betreff und E-Mail-Inhalt egal) antworten muss.
 
 page_index_who_title: Wer?
 page_index_who_p1: >
@@ -118,4 +118,6 @@ page_index_server_error_message: >
 
 page_index_email_success_title: E-Mail versendet
 page_index_email_success_message: >
-    Es wurde eine E-Mail an <strong>{{ .email }}</strong> mit weiteren Anweisungen versendet. Bitte überprüfe auch den <strong>Spam-Ordner</strong>, falls die E-Mail nach einigen Sekunden noch nicht eingetroffen sein sollte.
+    Es wurde eine E-Mail an <strong>{{ .email }}</strong> versendet. Sende eine Antwort auf diese E-Mail, indem du die <strong>Antworten-Funktion</strong> deines E-Mail-Programms verwendest (Betreff und E-Mail-Inhalt egal), um die Echtheit deiner E-Mail-Adresse zu bestätigen.</p>
+    
+    <p>Bitte überprüfe auch den <strong>Spam-Ordner</strong>, falls die E-Mail nach einigen Sekunden noch nicht eingetroffen sein sollte.
