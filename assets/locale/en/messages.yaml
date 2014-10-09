@@ -62,7 +62,7 @@ page_index_why_p2: >
 
 page_index_how_title: How?
 page_index_how_p1: >
-    To subscribe, enter your name, room number and email address:
+    To subscribe, enter your name, room number (example: 02/12-1) and email address:
 page_index_how_form_first_name: First name
 page_index_how_form_last_name: Last name
 page_index_how_form_room: Room number
