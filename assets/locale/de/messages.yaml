@@ -17,8 +17,15 @@ page_check_results_for:
         1 Ergebnis für <em>{{ .email }}</em>:
     other: >
         {{ .Count }} Ergebnisse für <em>{{ .email }}</em>:
+page_check_results_for_open:
+    one: >
+        Eine offene Anfrage:
+    other: >
+        {{ .Count }} offene Anfragen:
 page_check_results_none: >
     Keine Ergebnisse für <em>{{ .email }}</em>.
+page_check_results_none_open: >
+    Keine offenen Anfragen.
 
 page_check_results_table_first_name: Vorname
 page_check_results_table_last_name: Nachname
@@ -27,11 +34,20 @@ page_check_results_table_email: E-Mail-Adresse
 page_check_results_table_mailing_list: Mailingliste
 page_check_results_table_ip_address: IP-Adresse
 page_check_results_table_date: Datum
+page_check_results_table_status: Status
+page_check_results_table_action: Aktion
 
 page_check_results_table_date_format: 02.01.2006 15:04:05
 
 page_check_wrong_password_title: Falsches Passwort
 page_check_wrong_password_message: Falsches Passwort.
+
+page_check_approval_status_approved: Eingetragen
+page_check_approval_status_approved_button: ✔
+page_check_approval_status_declined: Abgelehnt
+page_check_approval_status_declined_button: ✖
+page_check_approval_status_open: Offen
+page_check_approval_status_open_button: Neu
 
 
 page_index_what_title: Was?

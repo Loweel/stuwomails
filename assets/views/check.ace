@@ -21,36 +21,57 @@
             button {{ T "page_check_form_submit" }}
   
   {{ if .query_sent }}
+  {{ $prefix := .approval_status_language_prefix }}
+  {{ $email := .email }}
+  {{ $password := .password }}
+  {{ $root := .root }}
+  {{ $csrf := .csrf }}
   
   section
     h2 {{ T "page_check_results_title" }}
     
     {{ if .requests }}
-    p {{ T "page_check_results_for" .count }}
+    p {{ .results_count_message }}
     
-    table
-      tr
-        th {{ T "page_check_results_table_first_name" }}
-        th {{ T "page_check_results_table_last_name" }}
-        th {{ T "page_check_results_table_room" }}
-        th {{ T "page_check_results_table_email" }}
-        th {{ T "page_check_results_table_mailing_list" }}
-        th {{ T "page_check_results_table_ip_address" }}
-        th {{ T "page_check_results_table_date" }}
+    table class="checktable"
+      thead
+        tr
+          th {{ T "page_check_results_table_first_name" }}
+          th {{ T "page_check_results_table_last_name" }}
+          th {{ T "page_check_results_table_room" }}
+          th {{ T "page_check_results_table_email" }}
+          th {{ T "page_check_results_table_mailing_list" }}
+          th {{ T "page_check_results_table_ip_address" }}
+          th {{ T "page_check_results_table_date" }}
+          th {{ T "page_check_results_table_status" }}
+          th {{ T "page_check_results_table_action" }}
       
-      {{ range .requests }}
-      tr
-        td {{ .FirstName }}
-        td {{ .LastName }}
-        td {{ .Room }}
-        td {{ .Email }}
-        td {{ .MailingListName }}
-        td {{ .IpAddress }}
-        td {{ .CreationDateNice }}
-      {{ end }}
+      tbody
+        {{ range .requests }}
+        tr
+          td {{ .FirstName }}
+          td {{ .LastName }}
+          td {{ .Room }}
+          td {{ .Email }}
+          td {{ .MailingListName }}
+          td {{ .IpAddress }}
+          td {{ .CreationDateNice }}
+          td {{ T (printf "%s%s_button" $prefix .ApprovalStatus) }}
+          td class="buttons"
+            form action="{{ $root }}check/" method="post"
+              {{ $csrf }}
+              input name="id" type="hidden" value="{{ .Id }}"
+              input name="email" type="hidden" value="{{ $email }}"
+              input name="password" type="hidden" value="{{ $password }}"
+              
+              button name="approval_status" value="approved" ✔
+              | &nbsp;
+              button name="approval_status" value="declined" ✖
+        {{ end }}
     {{ else }}
-    p {{ T "page_check_results_none" }}
-      
+    
+    p {{ .no_results_message }}
+    
     {{ end }}
   
   {{ end }}

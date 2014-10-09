@@ -63,6 +63,10 @@ p:last-child {
     margin-bottom: 0;
 }
 
+table {
+    border-collapse: collapse;
+}
+
 td , th {
     padding-right: 1em;
     text-align: left;
@@ -87,6 +91,18 @@ header a , .language a {
 
 header a:hover , .language a:hover {
     color: #777;
+}
+
+.checktable td , .checktable th {
+    background-color: white;
+}
+
+.checktable tbody {
+    font-size: 0.7em;
+}
+
+.checktable .buttons {
+    white-space: nowrap;
 }
 
 .language section {
