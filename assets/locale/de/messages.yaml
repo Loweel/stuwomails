@@ -81,9 +81,9 @@ page_index_how_p6: >
 
 page_index_who_title: Wer?
 page_index_who_p1: >
-    <a href="mailto:rami@stuwomails.de">Rami</a> und <a href="mailto:patrick@stuwomails.de">Patrick</a> (Wohnheimsprecher) sowie <a href="mailto:serhan@stuwomails.de">Serhan</a> (UG/02-2) sind derzeit die Moderatoren der Mailingliste.
+    <a href="mailto:rami@stuwomails.de">Rami</a> und <a href="mailto:patrick@stuwomails.de">Patrick</a> (Wohnheimsprecher) sowie <a href="mailto:serhan@stuwomails.de">Serhan</a> (ehemaliger Bewohner) sind derzeit die Moderatoren der Mailingliste.
 page_index_who_p2: >
-    Die Mailingliste wird von Serhan betrieben. Bei Fragen oder technischen Problemen kann man sich per <a href="mailto:serhan@stuwomails.de">E-Mail</a> an ihn wenden oder auch einfach vorbeikommen. :)
+    Die Mailingliste wird von Serhan betrieben. Bei Fragen oder technischen Problemen kann man sich jederzeit per <a href="mailto:serhan@stuwomails.de">E-Mail</a> an ihn wenden. :)
 page_index_who_p3: >
     Verwendete Software: <a href="http://untroubled.org/ezmlm/">ezmlm-idx</a>, <a href="https://golang.org/">Go</a>, <a href="https://www.sublimetext.com/">Sublime Text</a>. Gehostet bei <a href="https://uberspace.de/">Uberspace</a>. <a href="https://github.com/srhnsn/stuwomails">Quellcode verfügbar</a>.
 
